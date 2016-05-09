@@ -1,4 +1,6 @@
-cd ..
 set /p JAR="Nukkit Jar (i.e. nukkit.jar): "
 java -jar %JAR%
-exit 257
+goto :loop
+:loop
+java -jar %JAR%
+goto :loop
